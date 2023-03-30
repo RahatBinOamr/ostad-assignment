@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMI Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+        background-size: cover;
+        font-family: "Roboto", sans-serif;
+      }
+      form {
+        width: 400px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(135deg, orange 20%, cyan);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid gray;
+        margin-bottom: 20px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #00bcd4;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #result {
+        font-size: 24px;
+        font-weight: bold;
+        color: #490a0a;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="weightInput">Weight (kg)</label>
+      <input type="number" id="weightInput" />
+      <label for="heightInput">Height (m)</label>
+      <input type="number" id="heightInput" />
+      <button type="button" id="calculateBtn" onclick="calculateBMI()">
+        Calculate BMI
+      </button>
+      <div id="result"></div>
+    </form>
+    <script src="/Assignment02/BMI/script.js"></script>
+  </body>
+</html>
